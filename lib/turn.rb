@@ -22,9 +22,15 @@ end
 
 
 def valid_move?(board, index)
+<<<<<<< HEAD
   if position_taken?(board, index) == true
     false
   elsif index.to_i >= 0 && index.to_i <= 8 && position_taken?(board, index) == false
+=======
+  if position_taken?(board, index) == true && index.to_i > 0 && index.to_i < 8
+    false
+  elsif position_taken?(board, index) == false
+>>>>>>> 54783bf483c100fbe22eab74c2c295b53e3da3f9
     true
   else 
     nil 
